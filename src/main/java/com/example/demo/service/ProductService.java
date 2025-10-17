@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductService {
@@ -22,6 +23,14 @@ public class ProductService {
 
     public Product handleSave(Product product) {
         return productRepository.save(product);
+    }
+
+    public Optional<Product> findOneById(Long id) {
+        return productRepository.findById(id);
+    }
+
+    public void handleDelete(Long id) {
+        productRepository.deleteById(id);
     }
 
 }
