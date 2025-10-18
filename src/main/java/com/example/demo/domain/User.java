@@ -13,8 +13,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull(message = "Email không hợp lệ")
-    @Email(message = "Email không hợp lệ", regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[azA-Z0-9.-]+$")
+    @NotNull(message = "Email không được để trống")
+    @Email(message = "Email không hợp lệ")
     private String email;
 
     @NotNull

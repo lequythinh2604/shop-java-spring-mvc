@@ -7,7 +7,7 @@
                     <div>
                         <a href="#" target="_blank">Website</a>
                         &middot;
-                        <a href="#" target="_blank">Youtube</a>
+                        <a href="#" target="_blank">Link</a>
                     </div>
                 </div>
             </div>
