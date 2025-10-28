@@ -29,7 +29,7 @@ public class User {
     private String phone;
     private String avatar;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "role_id")
     private Role role;
 
